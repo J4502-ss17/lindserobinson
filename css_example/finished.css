@@ -34,6 +34,10 @@ h2 {
 	text-decoration: none;
 }
 
+#nav a:hover, a:active {
+    background-color: #7a991a;
+}
+
 #nav a:link, a:visited {
 	display:block;
     color: #ffffff;
@@ -45,9 +49,6 @@ h2 {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-#nav a:hover, a:active {
-    background-color: #7a991a;
-}
 
 .caption {
     color: black;

@@ -1,15 +1,24 @@
 /*styles go here*/
 
 p {
-  color: #666666;
+  color: grey;
   font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 h1{
   font-family: Georgia, "Times New Roman", serif;
+  color: #696969;
+  text-align: center;
 }
 
-#container{
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #800000;
+  text-align: center;
+}
+
+#container {
   width: 95%;
   margin: 0 auto;
 }
@@ -22,5 +31,33 @@ h1{
 #nav li {
   margin: 0;
   padding: 0;
-  
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+}
+
+#nav a:link, a:visited {
+  display: block;
+  color: #ffffff;
+  background-color: #800000;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 4px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#nav a:hover, a:active {
+  background-color: #7a991a;
+}
+
+.caption {
+  color: black;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.8em;
+  margin-top: 0;
+}
+
+img {
+  border: none;
 }
