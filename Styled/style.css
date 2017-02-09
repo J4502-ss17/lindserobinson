@@ -1,20 +1,24 @@
 /*styles go here*/
 
+html {
+  font-size: 100%;
+}
 p {
   color: grey;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Slabo 27px', Georgia, "Times New Roman",serif;
   text-align: center;
 }
 
 h1{
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'Oswald', Helvetica, Arial,sans-serif;
+  font-size: 3rem;
+  font-height: 0rem;
   color: #696969;
   text-align: center;
-  font-weight: bold;
 }
 
 h2 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
   color: #800000;
   text-align: center;
 }
@@ -44,11 +48,11 @@ h2 {
   text-align: center;
   text-decoration: none;
   padding: 4px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
 }
 
 #nav a:hover, a:active {
-  background-color: #7a991a;
+  background-color: #a9a9a9;
 }
 
 .caption {
