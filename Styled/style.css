@@ -1,93 +1,76 @@
-/*styles go here*/
-/*Typography*/
-
-html {
-  font-size: 100%;
+body {
+    font-family: 'Droid Serif', Helvetica, Arial, serif;
 }
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  color: #800000
+}
+
 p {
-  color: grey;
-  font-family: 'Slabo 27px', Georgia, "Times New Roman",serif;
-  text-align: center;
+    font-size: 1em;
 }
 
 .italic {
   font-style: italic;
 }
 
-h1{
-  font-family: 'Oswald', Helvetica, Arial,sans-serif;
-  font-size: 3rem;
-  color: #800000;
-  text-align: center;
-  line-height: 4rem;
+.caption {
+  font-style: italic;
+  font-size: 10px;
 }
-
-h2 {
-  font-family: 'Oswald', Helvetica, Arial, sans-serif;
-  color: #800000;
-  text-align: center;
-}
-
-h3 {
-  font-family: 'Slabo 27px', Georgia, "Times New Roman",serif;
-  color: #696969;
-  text-align: center;
-  font-size: 2rem;
-  line-height: 0.8rem
-
-}
-
-/*Container div*/
-
-/*#container {
-  width: 95%;
-  margin: 0 auto;
-}*/
 
 /*Navigation styles*/
-.navigation {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-flow: column;
+
+.navigation{
+	list-style: none;
+	margin: 0;
+	background: #800000;
+    padding: 0;
+    display: flex;
+	flex-flow: column;
 }
 
 .navigation a {
-  text-decoration: none;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 4px;
-  border-bottom: 1px solid black;
+	text-decoration: none;
+	display: block;
+	color: white;
   background-color: #800000;
-  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    text-align:center;
+    padding: 10px;
+    border-bottom:1px solid black;
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
 }
 
-.navigation li:last-of-type a {
+.navigation li:last-of-type a{
   border-bottom: none;
 }
 
-/*.navigation a:link, a:visited {
-  display: block;
-  color: #ffffff;
-  background-color: #800000;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  padding: 4px;
-  font-family: 'Oswald', Helvetica, Arial, sans-serif;
-}*/
+/*Image width*/
 
-.navigation a:hover, a:active {
-  background-color: #a9a9a9;
+img {
+    width: 100%;
 }
 
+/*Colors for different parts of page */
 
-/*Colors for different parts of page*/
-/*header {
-  background: yellow;
-}*/
+header {
+  background: gray;
+}
+
+footer {
+  background: white;
+}
+
+article {
+  background: white;
+}
 
 .aside-1 {
   background: #800000;
@@ -97,26 +80,11 @@ h3 {
   background: #800000;
 }
 
-/*Image data*/
-.caption {
-  color: black;
-  font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-size: 0.8em;
-  margin-top: 0;
-}
-
-img {
-  border: none;
-  width: 55%;
-  padding: 15px;
-}
-
 /*Setting up flexible boxes for our content*/
 
 .wrapper {
-  display: flex;
-  flex-flow: row wrap;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 header, article, aside, footer {
@@ -126,16 +94,85 @@ header, article, aside, footer {
 
 /*These styles activate when the page is larger than 800px wide*/
 
-@media (min-width: 800px)  {
+@media (min-width:800px) {
 
-  .navigation {
-    flex-flow: row rap;
-    justify-content: flex-end;
-  }
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
 
-  .navigation a {
-    border: none;
-  }
+    .navigation a {
+        border: none;
+    }
 
+    .navigation a:hover {
+    	background: black;
+    }
 
+    aside {
+        flex: 1 auto;
+    }
+
+    article {
+		flex: 3 auto;
+	}
+
+    .aside-1 {
+        order: 1;
+    }
+
+    article {
+        order: 2;
+    }
+
+    .aside-2 {
+        order: 3;
+    }
+
+    footer {
+        order: 4;
+    }
+
+    /*These styles apply to the floated image technique*/
+
+            /*========================
+
+            img {
+                width: 45%;
+                float: left;
+                margin-right: 10px;
+            }
+
+            .first {
+                margin-top: 0;
+            }
+
+            =======================*/
+
+    /*These styles apply to the Flexbox image technique */
+
+    article {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+
+    /*This code is for the first image attempt -- the object-fit property*/
+    /*img {
+        width: 45%;
+        object-fit: contain;
+    }*/
+
+    .image {
+        width: 35%;
+        margin-right: 10px;
+    }
+
+    .story {
+        width: 45%;
+    }
+
+    .first {
+        margin-top: 0;
+    }
 }
