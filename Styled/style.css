@@ -126,6 +126,10 @@ header, article, aside, footer {
   flex-flow: row;
 }
 
+/*.hidden {
+  display: none;
+}*/
+
 /*These styles activate when the page is larger than 800px wide*/
 
 @media all and (min-width:600px){
@@ -197,6 +201,10 @@ header, article, aside, footer {
 
     .first {
         margin-top: 0;
+    }
+
+    .hidden {
+      display: none;
     }
 }
 
