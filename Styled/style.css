@@ -17,6 +17,11 @@ h2 {
   color: #800000
 }
 
+h3 {
+  font-size: .08em;
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+}
+
 p {
     font-size: 1em;
     line-height: 1.4em;
@@ -37,8 +42,9 @@ p {
   background: grey;
   color: white;
   padding: 10px;
-  order: 2
+  /*order: 2;*/
 }
+
 
 /*Navigation styles*/
 
@@ -47,8 +53,8 @@ p {
 	margin: 0;
 	background: #800000;
     padding: 0;
-    display: flex;
-	flex-flow: column;
+    /*display: flex;
+	flex-flow: column;*/
 }
 
 .navigation a {
@@ -106,7 +112,31 @@ header, article, aside, footer {
   padding: 10px;
 }
 
+#sidebar {
+  display: flex;
+  flex-flow: column;
+}
+
+.navigation {
+  display: flex;
+}
+
+.aside-2 {
+  display: flex;
+  flex-flow: row;
+}
+
 /*These styles activate when the page is larger than 800px wide*/
+
+@media all and (min-width:600px){
+
+  .navigation li {
+    flex-flow: row;
+    justify-content: space-around;
+
+  }
+
+}
 
 @media (min-width:800px) {
 
@@ -120,7 +150,7 @@ header, article, aside, footer {
     }
 
     .navigation a:hover {
-    	background: black;
+    	background: grey;
     }
 
     aside {
@@ -141,6 +171,7 @@ header, article, aside, footer {
 
     .aside-2 {
         order: 3;
+        display: flex;
     }
 
     footer {
