@@ -19,6 +19,9 @@ h2 {
 
 p {
     font-size: 1em;
+    line-height: 1.4em;
+    width: 95%;
+    margin: 0.8em auto;
 }
 
 .italic {
@@ -28,6 +31,13 @@ p {
 .caption {
   font-style: italic;
   font-size: 10px;
+}
+
+#sidebar {
+  background: grey;
+  color: white;
+  padding: 10px;
+  order: 2
 }
 
 /*Navigation styles*/
@@ -137,23 +147,6 @@ header, article, aside, footer {
         order: 4;
     }
 
-    /*These styles apply to the floated image technique*/
-
-            /*========================
-
-            img {
-                width: 45%;
-                float: left;
-                margin-right: 10px;
-            }
-
-            .first {
-                margin-top: 0;
-            }
-
-            =======================*/
-
-    /*These styles apply to the Flexbox image technique */
 
     article {
         display: flex;
@@ -161,11 +154,6 @@ header, article, aside, footer {
         flex-wrap: wrap;
     }
 
-    /*This code is for the first image attempt -- the object-fit property*/
-    /*img {
-        width: 45%;
-        object-fit: contain;
-    }*/
 
     .image {
         width: 35%;
@@ -179,4 +167,19 @@ header, article, aside, footer {
     .first {
         margin-top: 0;
     }
+}
+
+
+@media screen and (min-width: 10000px) {
+
+  #sidebar {
+    order: 0;
+    margin: 10px;
+    flex: 1 auto;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-flow: column;
+  }
 }
