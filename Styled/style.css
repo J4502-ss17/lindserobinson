@@ -126,6 +126,14 @@ header, article, aside, footer {
   flex-flow: row;
 }
 
+.menu-trigger {
+  order: 1;
+}
+
+nav ul {
+  display: none;
+}
+
 /*.hidden {
   display: none;
 }*/
@@ -221,4 +229,24 @@ header, article, aside, footer {
     display: flex;
     flex-flow: column;
   }
+}
+
+@media screen and (min-width: 700px){
+
+  nav ul{
+    display: flex;
+  }
+
+  nav ul li {
+    border-top: none;
+  }
+
+  .navigation {
+    order: 2;
+  }
+
+  .menu-trigger {
+    display: none;
+  }
+
 }
