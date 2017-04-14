@@ -117,10 +117,6 @@ header, article, aside, footer {
   flex-flow: column;
 }
 
-.navigation {
-  display: flex;
-}
-
 .aside-2 {
   display: flex;
   flex-flow: row;
